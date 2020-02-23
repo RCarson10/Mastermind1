@@ -74,7 +74,7 @@ void Game::generateFeedback()
 	for (int i = 0; i < 6; i++)
 	{
 		int inc = fmin(guessColor[i], codeColor[i]);
-		if (inc == 1)
+		if (inc > 0)
 		{
 			whtPegs++;
 		}
