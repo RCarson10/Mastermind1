@@ -1,10 +1,12 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <cmath>
 #include <utility>
 #include <ctime>
 #include <iostream>
 #include "Guess.h"
+
 using namespace std;
 
 //This is my own work - Gaj Carson
