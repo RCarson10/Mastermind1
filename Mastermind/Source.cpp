@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	Game newGame;
-	
+	//Creates and starts the game
 	newGame.playGame();
 
 	return 0;

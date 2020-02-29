@@ -28,10 +28,12 @@ int Guess::operator[](int index) const
 }
 bool Guess::isValid(int a)const 
 {
+	//Making sure we make a valid array
 	return a >= 1 && a <= 6;
 }
 void Guess::setGuess(int a, int b, int c, int d)
 {
+	//each variable is tested through isValid to make sure the array is built correctly
 	if (isValid(a) == true) 
 		aGuess[0] = a;
 
@@ -46,6 +48,7 @@ void Guess::setGuess(int a, int b, int c, int d)
 }
 void Guess::setMaster()
 {
+	//Rand is used to make the master code and it will not be seen
 	aGuess[0] = rand()%6;
 	aGuess[1] = rand()%6;
 	aGuess[2] = rand()%6;
