@@ -69,8 +69,8 @@ void Game::generateFeedback()
 	}
 	for (int i = 0; i < 4; i++)
 	{
-		guessColor[currGuess[i]]++;
-		codeColor[secretCode[i]]++;
+		guessColor[currGuess[i]-1]++;
+		codeColor[secretCode[i]-1]++;
 	}
 	int inc = 0;
 	for (int i = 0; i < 6; i++)
@@ -78,7 +78,7 @@ void Game::generateFeedback()
 		int inc = fmin(guessColor[i], codeColor[i]);
 		if (inc > 0)
 		{
-			whtPegs++;
+			whtPegs += inc;
 		}
 
 	}
